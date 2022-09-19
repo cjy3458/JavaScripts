@@ -5,16 +5,27 @@
         <title>Frankinsense</title>
     </head>
     <style>
+        p{
+            border: solid 1pt grey;
+            margin: 30px;
+            padding: 30px;
+        }
         .js{
+            font-family: cursive;
             font-weight: bold;
             color: blueviolet;
         }
         #first{
-            color:tomato;
+            font-size: 16pt;
+            color:magenta;
+        }
+        #bb{
+            font-style: italic;
+            color: brown; 
         }
     </style>
     <body>
-        <h1 style="background-color:powderblue; color:white">Frankinsense Page</h1>
+        <h1 style="background-color:powderblue; color:white; font-style: italic;">Frankinsense Page</h1>
         <input type="button" value="Change_Mode" onclick="
         var target = document.querySelector('body')
         if(this.value === 'Night'){
@@ -34,10 +45,13 @@
         }
         ">
         <p>
-            <span id="first" class="js">Frankinsense</span>는 신성진 외 1명으로 이루어진 꽃미남 보이그룹 밴드입니다.
+            <span id="first" class="js">Frankinsense</span><span id="bb">는 신성진 외 1명으로 이루어진 꽃미남 보이그룹 밴드입니다.</span>
             <br>엄청난 잠재력을 보유하고 있으며 프로듀서 <span class="js">'코드쿤스트'</span>의 샤랴웃을 받은 기대주로 떠오르고있습니다.
-            <br><a href="https://www.youtube.com/watch?v=0QvG86vzmpQ"><span style="color: blue;">데뷔곡</span></a> ← ← ← 클릭 시 페이지로 이동
-            <br>많은 관심 부탁드립니당.
+            <br><a href="https://www.youtube.com/watch?v=0QvG86vzmpQ"><span style="color: darkturquoise;">데뷔곡</span></a> ← ← ← 클릭 시 페이지로 이동
+            <br>
+            <p>
+                <img src="프랭킨센스.png" width = "300" height = "300" alt="Central Park" />
+            </p>
         </p>
     </body>
 </html>
