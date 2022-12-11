@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Draw Rectangle</title></head>
+<body>
+<h3>Draw Rectangle 2022</h3>
+<hr>
+<canvas id="myCanvas" style="background-color:aliceblue" width="200" height="150"></canvas>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    context.beginPath(); // Set blank path
+    for(var i=0; i<5; i++) {
+    context.rect(10+i*30,10+i*10, 50,50);
+    }
+    context.strokeStyle="magenta"; // line color
+    context.stroke(); // Draw rectangle on canvas
+</script> 
+</body>
+</html>

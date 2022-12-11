@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><title>line color and width</title></head>
+<body>
+<h3>line color and width 2022</h3>
+<hr>
+<canvas id="myCanvas" style="background-color:aliceblue"width="180" height="300"></canvas>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    // 1 pixel blue line
+    context.beginPath();
+    context.moveTo(20, 20);
+    context.lineTo(150, 50);
+    context.strokeStyle = "blue";
+    context.stroke(); 
+    // 10 pixel yellowgreen rectangle
+    context.beginPath();
+    context.rect(20, 80, 120, 50);
+    context.lineWidth = 10; // set line width 10 pixel
+    context.strokeStyle = "yellowgreen"; // line color
+    context.stroke(); 
+    // 20 pixel violet color arc
+    context.beginPath();
+    context.arc(80, 220, 50, 0, 1.5*Math.PI, false);
+    context.lineWidth = 20; // line width 20 pixel
+    context.strokeStyle = "violet"; // line color
+    context.stroke(); 
+</script> 
+</body>
+</html>

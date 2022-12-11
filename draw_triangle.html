@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Draw a triangle</title></head>
+<body>
+<h3>Triangle 2022</h3>
+<hr>
+<canvas id="myCanvas" style="background-color:aliceblue"width="200" height="150"></canvas>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    context.beginPath(); // Create a blank path
+    context.moveTo(120, 20); // set start point (120, 20)
+    context.lineTo(20, 50); // Add line in path from (120, 20) to (20, 50)
+    context.lineTo(150, 120); // Add line from (20, 50) to (150, 120)
+    context.lineTo(120, 20); // Add line from (150, 120) to (120, 20)
+    context.strokeStyle="magenta"; // Set line color
+    context.stroke(); // Put path on canvas
+</script> 
+</body>
+</html>

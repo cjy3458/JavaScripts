@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html><head><title>Canvas Draw 2022</title></head>
+<body>
+<h3>Canvas Draw</h3> <hr>
+<canvas id="myCanvas" style="background-color:aliceblue
+"
+width="250" height="150"></canvas>
+<script>
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
+// Draw Rectangle with blue line
+context.beginPath(); 
+context.strokeStyle = "blue"; 
+context.rect(30, 30, 50, 50); 
+context.stroke(); 
+// Draw Rectangle filled with violet color
+context.beginPath(); 
+context.fillStyle = "orange"; 
+context.rect(60, 60, 50, 50); 
+context.fill(); 
+// Draw Text inside with red color
+context.font = "20px Gothic";
+context.fillStyle = "red"; 
+context.fillText("Text on Canvas", 100, 110); 
+</script>
+</body>
+</html>

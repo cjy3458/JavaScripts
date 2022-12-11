@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Draw Image with Canvas Size</title></head>
+<body>
+<h3>Draw Image with Canvas Size 2022</h3>
+<hr>
+<canvas id="myCanvas" style="background-color:aliceblue" width= "500" height="300"></canvas>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    var img = new Image();
+    img.onload = function () {
+    context.drawImage(img, 0, 0,
+    canvas.width, canvas.height);
+    }
+    img.src = "media/tree.png";
+</script>
+</body>
+</html

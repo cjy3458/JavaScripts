@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head><title>Filled Rectangle and Arc</title></head>
+<body>
+<h3>Filled Rectangle and Arc 2022</h3>
+<hr>
+<canvas id="myCanvas" style="background-color:aliceblue"width="180" height="420"></canvas>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    // fillRect() draw filled rectangle without contour
+    context.fillStyle = "violet";
+    context.fillRect(20, 20, 100, 100); // Draw filled rectangle
+    // fill() fill inside of rectangle
+    context.beginPath();
+    context.rect(20, 150, 100, 100); // Add rectangle in path
+    context.fillStyle = "violet";
+    context.fill(); // Paint inside of rectangle
+    // Draw contour of rectangle
+    context.strokeStyle = "gray";
+    context.lineWidth = 10;
+    context.stroke(); // draw contour of rectangle
+    // Draw Arc
+    context.beginPath(); 
+    context.moveTo(80, 340);
+    context.arc(80, 340, 50, 0, 1.5 * Math.PI);
+    context.closePath();
+    context.fillStyle="yellowgreen";
+    context.fill();
+    context.strokeStyle = "gray";
+    context.lineWidth = 20;
+    context.stroke();
+</script>
+</body></html>
