@@ -40,7 +40,7 @@ html {
     content: "";
     width: 70%;
     height: 70%;
-    background-image: url("oep.png");
+    background-image: url("pngegg.png");
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -130,7 +130,7 @@ html {
     content: "";
     width: 100px;
     height: 100px;
-    background-image: url("oep.png");
+    background-image: url("pngegg.png");
     background-size: cover;
     background-position: center;
     position: absolute;
