@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toollist"> <!-- 전체 클래스-->
+        <div class="main__title"> <!-- 대제목-->
+            <h1>To Do List</h1>
+        </div>
+        
+        <div class="input__section"> <!--할 일을 입력받는 클래스-->
+            <form>
+                <div>
+                    <input type = "text" class = "item" autofocus="true"> <!-- autofocus= 웹 접속 시 해당 부분 포커싱-->
+                </div>
+                <div>
+                    <button type = "button" class ="input__button"><i class="fas fa-plus-circle"></i></button>
+                </div>
+            </form>
+        </div>
+
+        <div class="item__list"></div> <!--입력받은 할 일들 리스트로 표시하는 클래스-->
+    </div>ㅔㄱ
+    <script src="main.js" defer></script>
+</body>
+</html>
