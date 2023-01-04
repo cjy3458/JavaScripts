@@ -16,14 +16,7 @@ html {
     text-align: center;
     word-break: keep-all;
 }
-.img1 {
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
-    color: white;
-}
-.img2 {
-    background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
-    color: tomato;
-}
+
 .flex-row {
     display: flex;
     flex-direction: row;
