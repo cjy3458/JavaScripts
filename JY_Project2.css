@@ -1,5 +1,5 @@
 body {
-    caret-color: #02aab0;
+    caret-color: grey;
     color: #272341;
   }
   
@@ -7,7 +7,7 @@ body {
     text-align: left;
     max-width: 550px;
     margin: auto;
-    background: linear-gradient(135deg, #02aab0, #00cdac);
+    background: linear-gradient(135deg, grey, black);
   }
   
   .main__title {
