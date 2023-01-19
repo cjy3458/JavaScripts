@@ -1,34 +1,34 @@
-var Links = {
-  setColor:function(color){
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color = color;
-      i = i + 1;
-    }
-  }
-}
-var Body = {
-  setColor:function (color){
-    document.querySelector('body').style.color = color;
-  },
-  setBackgroundColor:function (color){
-    document.querySelector('body').style.backgroundColor = color;
-  }
-}
-function nightDayHandler(self){
-  var target = document.querySelector('body');
-  if(self.value === 'night'){
-    Body.setBackgroundColor('black');
-    Body.setColor('white');
-    self.value = 'day';
+'use strict';
 
-    Links.setColor('white');
-  } else {
-    Body.setBackgroundColor('white');
-    Body.setColor('black');
-    self.value = 'night';
+let itemList = [];
+let inputButton = document.querySelector(".input__button");
+inputButton.addEventListener("click", addItem);
 
-    Links.setColor('blue');
+function addItem() {
+  let item = document.querySelector(".item").value;
+  if (item != null) {
+      itemList.push(item);
+      document.querySelector(".item").value = "";
+      document.querySelector(".item").focus();
   }
+
+  showList();
 }
+
+function addItem() {
+  let item = document.querySelector(".item").value;
+  if (item != null) {
+      itemList.push(item);
+      document.querySelector(".item").value = "";
+      document.querySelector(".item").focus();
+  }
+
+  showList();
+}
+
+let checkList = document.querySelector('.item__list');
+checkList.addEventListener('click', event => {
+  if (event.target.tagName === 'LI') {
+    event.target.classList.toggle('checked');
+  }
+});
