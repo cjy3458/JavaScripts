@@ -19,16 +19,16 @@ var Body = {
 function nightDayHandler(self){
   var target = document.querySelector('body');
   if(self.value === 'night'){
-    Body.setBackgroundColor('black');
+    Body.setBackgroundColor('darkgray');
     Body.setColor('white');
     self.value = 'day';
 
     Links.setColor('white');
   } else {
     Body.setBackgroundColor('white');
-    Body.setColor('black');
+    Body.setColor('grey');
     self.value = 'night';
 
-    Links.setColor('blue');
+    Links.setColor('grey');
   }
 }
