@@ -177,6 +177,7 @@ p.info {
 
 /*반응형 만들기 연습*/
 @media screen and (max-width: 768px) {
+  
   @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 
   html {
@@ -206,8 +207,8 @@ p.info {
   }
 
   .todo-box {
-    height: 80px;
-    width: 160px;
+    height: 40%;
+    width: 90%;
     background-color: white;
     border: 1px solid #ddd;
   }
