@@ -1,25 +1,34 @@
-var coworkers = {
-    programmer: "Jay",
-    designer: "Young",
-  };
-  document.write("programmer : " + coworkers.programmer + "<br>");
-  document.write("designer : " + coworkers.designer + "<br>");
-  coworkers.bookeeper = "rere";
-  document.write("bookeeper : " + coworkers.bookeeper + "<br>");
-  coworkers["data science"] = "gmlad";
-  document.write("data science : " + coworkers["data science"] + "<br>");
-
-<h2>Iterate</h2>
-
-  for (var key in coworkers) {
-    document.write(key + " : " + coworkers[key] + "<br>");
-  }
-
-<h2>Property & Method</h2>
-
-  coworkers.showAll = function(){
-    for (var key in this) {
-        document.write(key + " : " + coworkers[key] + "<br>");
+var Links = {
+  setColor:function(color){
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      alist[i].style.color = color;
+      i = i + 1;
     }
   }
-  coworkers.showAll();
+}
+var Body = {
+  setColor:function (color){
+    document.querySelector('body').style.color = color;
+  },
+  setBackgroundColor:function (color){
+    document.querySelector('body').style.backgroundColor = color;
+  }
+}
+function nightDayHandler(self){
+  var target = document.querySelector('body');
+  if(self.value === 'night'){
+    Body.setBackgroundColor('black');
+    Body.setColor('white');
+    self.value = 'day';
+
+    Links.setColor('white');
+  } else {
+    Body.setBackgroundColor('white');
+    Body.setColor('black');
+    self.value = 'night';
+
+    Links.setColor('blue');
+  }
+}
