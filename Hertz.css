@@ -1,0 +1,25 @@
+.js {
+  font-family: cursive;
+  font-weight: bold;
+  color: blueviolet;
+}
+#first {
+  font-size: 16pt;
+  color: magenta;
+}
+#bb {
+  font-style: italic;
+  color: brown;
+}
+h1 {
+  background-color: powderblue;
+  color: white;
+  font-style: italic;
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
