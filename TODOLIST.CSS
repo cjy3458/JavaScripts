@@ -1,0 +1,57 @@
+.container{
+    background-color: #f4ded2;
+    display: flex; /*디스플레이 플렉스 == 요소들을 중앙으로*/
+    flex-direction: column; /*요소들을 위에서 아래로 쌓이게*/
+    padding: 32px 0;
+}
+
+.input-container{
+    width: 80%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+#input{
+    width: 70%;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid rosybrown;
+}
+
+#add-button {
+    width: 20%;
+    background-color: rgba(175, 114, 67, 0.723);
+    border-radius: 4px;
+    border: 1px solid rosybrown;
+    color: white;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    width: 80%;
+    align-self: center;
+    border-radius: 4px;
+    border: 3px solid #b67d7d;
+    background-color: white;
+}
+
+h1{
+    padding: 16px 24px;
+    margin: 0;
+    font-size: 16px;
+    border-bottom: 1px solid #d5baba;
+}
+
+#list{
+    margin: 32px 0;
+}
+
+.list-item{
+    border-bottom: 1px solid #eaeaea;
+    margin-right: 32px;
+    padding: 16px 0;
+    font-size: 14px;
+}
