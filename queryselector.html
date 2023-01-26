@@ -1,0 +1,19 @@
+<!--쿼리셀렉터 연습-->
+
+querySelector(#id) => id값 id를 가진 요소 접근
+querySelector(.class) => class값 class를 가진 요소 접근
+
+
+querySelectorAll("#id, .class");
+== nodeList를 반환하기 때문에 for문 사용
+
+var section = document.querySelector("#sections .section");
+
+section.style.border = "1px solid #ff0000";
+
+const sections = document.querySelectorAll("#sections , #sections .section");
+console.log(sections.constructor.name);
+for (const i = 0; i < sections.length; i++) {
+  const item = sections.item(i);
+  item.style.border = "1px solid #ff0000";
+}
