@@ -1,8 +1,6 @@
 const addButton = document.querySelector("#add-button");
 
-
-addButton.addEventListener("click", () => { 
-  
+addButton.addEventListener("click", () => {
   const input = document.querySelector("#input");
   const text = input.value.trim();
 
@@ -11,9 +9,7 @@ addButton.addEventListener("click", () => {
     input.value = "";
     input.focus();
   }
-
 });
-
 
 function addToList(text) {
   const list = document.querySelector("#list");
