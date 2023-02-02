@@ -3,7 +3,7 @@ const clearButton = document.querySelector(".Clear");
 
 addButton.addEventListener("click", () => {
   const input = document.querySelector("#input");
-  const text = input.value.trim();
+  const text = input.value.trim(); /*trim()을 이용해 양끝 공백을 없애주기*/
 
   if (text !== "") {
     addToList(text);
