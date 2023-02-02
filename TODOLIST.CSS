@@ -26,7 +26,12 @@ body {
   border: 1px solid rosybrown;
   margin: auto;
 }
-
+.Clear {
+  background-color: #613232;
+  color: whitesmoke;
+  border-radius: 4px;
+  border: 1px solid rosybrown;
+}
 #add-button {
   width: 30%;
   height: 100%;
