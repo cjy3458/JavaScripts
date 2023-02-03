@@ -24,6 +24,11 @@ function addToList(text) {
 }
 
 clearButton.addEventListener("click", () => {
-  const header = document.querySelector(".list-item")
-  header.parentNode.removeChild(header);
+  const header = document.querySelectorAll(".list-item")
+  console.log(header.constructor.name);
+  for (const i = 0; i < header.length; i++) {
+    const item = header.item(i);
+    item.parentNode.removeChild(item);
+  }
 })/*일단 삭제하는거까지는 만듦 but queryselectorAll이 아니기 때문에 현재는 맨 위에 요소만 삭제 가능 */
+/*querySelectorAll을 사용했는데 아직도 맨 위에 요소만 삭제(이유 모름) */
