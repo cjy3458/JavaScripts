@@ -16,11 +16,15 @@ function addToList(text) {
   const list = document.querySelector("#list");
 
   const newListItem = document.createElement("li");
+  const newCheckbox = document.createElement("input");
+
   newListItem.classList.add("list-item");
+  newCheckbox.classList.add("check-box");
 
   newListItem.innerHTML = text;
-
+  newCheckbox.setAttribute("type", "checkbox");
   list.appendChild(newListItem);
+  list.appendChild(newCheckbox);
 }
 
 clearButton.addEventListener("click", () => {
