@@ -33,6 +33,7 @@ body {
   border: 1px solid rosybrown;
   margin-left: 3%;
 }
+
 #add-button {
   width: 30%;
   height: 100%;
@@ -73,6 +74,9 @@ h3 {
 
 #list {
   margin: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .list-item {
@@ -80,4 +84,5 @@ h3 {
   margin-right: 32px;
   padding: 16px 0;
   font-size: 14px;
+  flex: 0 0 50%;
 }
