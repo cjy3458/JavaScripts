@@ -35,3 +35,11 @@ clearButton.addEventListener("click", () => {
   }
 })/*일단 삭제하는거까지는 만듦 but queryselectorAll이 아니기 때문에 현재는 맨 위에 요소만 삭제 가능 */
 /*querySelectorAll을 사용했는데 아직도 맨 위에 요소만 삭제(이유 모름) */
+
+clearButton.addEventListener("click", () => {
+  const cb = document.querySelectorAll(".checkbox")
+  for (const i = 0; i < cb.length; i++) {
+    const it = cb.item(i);
+    it.parentNode.removeChild(it);
+  }
+})
