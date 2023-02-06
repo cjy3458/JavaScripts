@@ -43,3 +43,4 @@ clearButton.addEventListener("click", () => {
     it.parentNode.removeChild(it);
   }
 })
+/* 체크박스도 같이 삭제해야되는데 버튼 하나로 하는 방법이 잘 안떠오름(고민해보기!)*/
