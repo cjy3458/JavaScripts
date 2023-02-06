@@ -29,7 +29,6 @@ function addToList(text) {
 
 clearButton.addEventListener("click", () => {
   const header = document.querySelectorAll(".list-item")
-  console.log(header.constructor.name);
   for (const i = 0; i < header.length; i++) {
     const item = header.item(i);
     item.parentNode.removeChild(item);

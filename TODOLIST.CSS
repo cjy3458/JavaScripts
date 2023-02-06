@@ -84,5 +84,5 @@ h3 {
   margin-right: 32px;
   padding: 16px 0;
   font-size: 14px;
-  flex: 0 0 50%;
+  flex: 0 0 50%; /*뭔지 확인*/
 }
