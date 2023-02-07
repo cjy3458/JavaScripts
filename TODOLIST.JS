@@ -29,18 +29,16 @@ function addToList(text) {
 
 clearButton.addEventListener("click", () => {
   const header = document.querySelectorAll(".list-item")
+  const cb = document.querySelectorAll(".check-box")
+
   for (const i = 0; i < header.length; i++) {
     const item = header.item(i);
     item.parentNode.removeChild(item);
   }
-})/*일단 삭제하는거까지는 만듦 but queryselectorAll이 아니기 때문에 현재는 맨 위에 요소만 삭제 가능 */
-/*querySelectorAll을 사용했는데 아직도 맨 위에 요소만 삭제(이유 모름) */
-
-clearButton.addEventListener("click", () => {
-  const cb = document.querySelectorAll(".checkbox")
+  
   for (const i = 0; i < cb.length; i++) {
     const it = cb.item(i);
     it.parentNode.removeChild(it);
   }
-})
-/* 체크박스도 같이 삭제해야되는데 버튼 하나로 하는 방법이 잘 안떠오름(고민해보기!)*/
+})/*일단 삭제하는거까지는 만듦 but queryselectorAll이 아니기 때문에 현재는 맨 위에 요소만 삭제 가능 */
+/*querySelectorAll을 사용했는데 아직도 맨 위에 요소만 삭제(이유 모름) */
