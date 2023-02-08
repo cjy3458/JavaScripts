@@ -87,22 +87,13 @@ h3 {
   flex: 0 0 50%; /*뭔지 확인*/
 }
 
-.check-box {
+input[type="checkbox"]:checked {
   display: flex;
   width: 17px;
   height: 17px;
-  background-color: #eee;
+  box-shadow: 0 0 0 3px rosybrown;
 }
 
-.check-box:hover input~.check-box {
-  background-color: #ccc;
-}
-
-.check-box::after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
+input[type="checkbox"] {
+  color: #613232;
 }
