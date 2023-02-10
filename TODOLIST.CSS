@@ -90,16 +90,11 @@ h3 {
 .check-box {
   min-width: none;
   min-height: none;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 0.7rem;
+  height: 0.7rem;
   margin: 0.5rem 0.5rem;
   border-radius: 50px;
   border: 1px solid lightgray;
   cursor: pointer;
   text-align: center;
-}
-
-.list.checked .check-box {
-  border: 2px solid darkgray;
-  color: green;
 }
