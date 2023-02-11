@@ -87,14 +87,37 @@ h3 {
   flex: 0 0 50%; /*뭔지 확인*/
 }
 
-.check-box {
-  min-width: none;
-  min-height: none;
-  width: 0.7rem;
-  height: 0.7rem;
-  margin: 0.5rem 0.5rem;
-  border-radius: 50px;
-  border: 1px solid lightgray;
-  cursor: pointer;
-  text-align: center;
-}
+input.check-box{
+  display: flex;
+  }
+
+input.check-box + label{
+  cursor:pointer;
+ }
+
+input.check-box + label > span{
+  vertical-align: middle;
+  padding-left: 5px;
+ }
+
+/* label:before에 체크하기 전 상태 CSS */
+input.check-box + label:before{
+  content:"";
+  display:inline-block;
+  width:17px;
+  height:17px;
+  border:2px solid #F47C7C;
+  border-radius: 4px;
+  vertical-align:middle;
+  }
+  
+/* label:before에 체크 된 상태 CSS */  
+input.check-box:checked + label:before{
+  content:"";
+  background-color:#F47C7C;
+  border-color:#F47C7C;
+  background-image: url('check_btn.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  }
+/*체크박스 css인데 적용이 안됌. 이유를 도저히 모르겠음 */
