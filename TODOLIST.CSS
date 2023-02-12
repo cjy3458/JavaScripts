@@ -86,5 +86,9 @@ h3 {
   font-size: 14px;
   flex: 0 0 50%; /*뭔지 확인*/
 }
+
+.check-box {
+  background-color: #613232;
+}
 /*체크박스 css인데 적용이 안됌. 이유를 도저히 모르겠음 */
 /*css는 나중에 하기로 결정*/
