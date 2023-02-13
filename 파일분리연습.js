@@ -1,14 +1,14 @@
-var Links = {
+let Links = {
   setColor:function(color){
-    var alist = document.querySelectorAll('a');
-    var i = 0;
+    let alist = document.querySelectorAll('a');
+    let i = 0;
     while(i < alist.length){
       alist[i].style.color = color;
       i = i + 1;
     }
   }
 }
-var Body = {
+let Body = {
   setColor:function (color){
     document.querySelector('body').style.color = color;
   },
@@ -17,7 +17,7 @@ var Body = {
   }
 }
 function nightDayHandler(self){
-  var target = document.querySelector('body');
+  let target = document.querySelector('body');
   if(self.value === 'night'){
     Body.setBackgroundColor('darkgray');
     Body.setColor('white');
