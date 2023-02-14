@@ -1,10 +1,17 @@
 body {
     background-color: #f4ded2;
-    display: flex;
-    flex-direction: column;
     border: 10px;
 
 }
 .ol {
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+p {
+    font-weight: bolder;
+}
+
+h1 {
+    text-align: center;
 }
