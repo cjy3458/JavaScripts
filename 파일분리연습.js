@@ -25,10 +25,10 @@ function nightDayHandler(self){
 
     Links.setColor('white');
   } else {
-    Body.setBackgroundColor('#f4ded2');
-    Body.setColor('#613232');
+    Body.setBackgroundColor('#eaeaea');
+    Body.setColor('black');
     self.value = 'night';
 
-    Links.setColor('#613232');
+    Links.setColor('black');
   }
 }
