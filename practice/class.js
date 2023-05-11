@@ -16,3 +16,14 @@ console.log(Jay.name);
 console.log(Jay.age);
 console.log(Jay.mbti);
 aboutMe.question();
+
+class dong {
+  constructor() {
+    this.name = "GILDONG";
+    this.age = 12;
+  }
+}
+
+const aboutDong = new dong();
+console.log(aboutDong.name);
+console.log(aboutDong.age);
