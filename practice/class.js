@@ -27,3 +27,22 @@ class dong {
 const aboutDong = new dong();
 console.log(aboutDong.name);
 console.log(aboutDong.age);
+
+class gameUser {
+  constructor(name, hp, mp) {
+    this.name = name;
+    this.hp = hp;
+    this.mp = mp;
+    console.log(`이 사용자는 ${name}! 체력: ${hp} 마나:${mp}입니다.`);
+  }
+
+  move(position) {
+    console.log(`${this.name}은 ${position}으로 이동합니다.`);
+  }
+
+  attack(damage) {
+    console.log(
+      `${this.name}은 앞에 있는 적을 공격하여 ${damage}의 데미지를 입힙니다.`
+    );
+  }
+}
