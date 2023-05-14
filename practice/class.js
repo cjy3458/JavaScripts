@@ -28,6 +28,7 @@ const aboutDong = new dong();
 console.log(aboutDong.name);
 console.log(aboutDong.age);
 
+// 상속용 부모 class
 class gameUser {
   constructor(name, hp, mp) {
     this.name = name;
@@ -43,6 +44,11 @@ class gameUser {
   attack(damage) {
     console.log(
       `${this.name}은 앞에 있는 적을 공격하여 ${damage}의 데미지를 입힙니다.`
+    );
+  }
+  state(health) {
+    console.log(
+      `${this.name}은 현재 hp: ${this.hp} / mp: ${this.mp} 상태로 ${health}입니다.`
     );
   }
 }
