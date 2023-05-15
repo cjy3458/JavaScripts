@@ -63,3 +63,18 @@ class Jay extends gameUser {
 
 a = new Jay("재영", 1000, 4500);
 a.warrior("전사");
+
+let Jay = {
+  name: "Jay",
+  num: 1,
+};
+
+let Young = {
+  name: "Young",
+  num: 2,
+};
+
+let Choi = {
+  name: "Choi",
+  num: 3,
+};
