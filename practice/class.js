@@ -78,3 +78,16 @@ let Choi = {
   name: "Choi",
   num: 3,
 };
+
+class Student {
+  constructor(name, num) {
+    this.name = "Jay";
+    this.num = 1;
+  }
+}
+
+const 재 = new Student();
+const 영 = new Student();
+
+console.log(재);
+console.log(영);
