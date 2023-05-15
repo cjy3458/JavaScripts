@@ -6,15 +6,15 @@ class Yay {
   }
   question() {
     return console.log(
-      `나는 ${name}!, ${age}살이고, ${mbti}라는 mbti를 가지고있어`
+      `나는 ${this.name}!, ${this.age}살이고, ${this.mbti}라는 mbti를 가지고있어`
     );
   }
 }
 
 const aboutMe = new Yay("Jay", 25, "ENFP");
-console.log(Yay.name);
-console.log(Yay.age);
-console.log(Yay.mbti);
+console.log(aboutMe.name);
+console.log(aboutMe.age);
+console.log(aboutMe.mbti);
 aboutMe.question();
 
 class dong {
@@ -34,7 +34,7 @@ class gameUser {
     this.name = name;
     this.hp = hp;
     this.mp = mp;
-    console.log(`이 사용자는 ${name}! 체력: ${hp} 마나:${mp}입니다.`);
+    console.log(`이 사용자는 ${name}! 체력: ${hp} 마나:${mp} 입니다.`);
   }
 
   move(position) {
