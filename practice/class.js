@@ -1,4 +1,4 @@
-class Jay {
+class Yay {
   constructor(name, age, mbti) {
     this.name = name;
     this.age = age;
@@ -11,10 +11,10 @@ class Jay {
   }
 }
 
-const aboutMe = new Jay("Jay", 25, "ENFP");
-console.log(Jay.name);
-console.log(Jay.age);
-console.log(Jay.mbti);
+const aboutMe = new Yay("Jay", 25, "ENFP");
+console.log(Yay.name);
+console.log(Yay.age);
+console.log(Yay.mbti);
 aboutMe.question();
 
 class dong {
@@ -52,3 +52,14 @@ class gameUser {
     );
   }
 }
+
+// 상속받는 자식 클래스
+
+class Jay extends gameUser {
+  warrior(hero) {
+    console.log(`이 사용자는 '${hero}'직업군 입니다.`);
+  }
+}
+
+a = new Jay("재영", 1000, 4500);
+a.warrior("전사");
