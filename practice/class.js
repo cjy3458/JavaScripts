@@ -91,3 +91,10 @@ const 영 = new Student();
 
 console.log(재);
 console.log(영);
+
+class 반장 extends Student {
+  constructor(props) {
+    super(props);
+    
+  }
+}
