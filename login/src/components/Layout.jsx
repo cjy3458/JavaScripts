@@ -54,3 +54,17 @@ const Footer = styled.div`
   color: white;
   background-color: darkgrey;
 `;
+
+/* # BAD
+GET /getTodos/1
+GET /todos/show/1
+
+# GOOD
+GET /todos/1
+
+# BAD
+GET /todos/delete/1
+
+# GOOD
+DELETE /todos/1
+*/
