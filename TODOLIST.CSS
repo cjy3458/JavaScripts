@@ -89,8 +89,24 @@ h3 {
   flex: 0 0 50%; /*뭔지 확인*/
 }
 
-.check-box {
+/* 체크박스를 숨김 */
+input.check-box {
+  display: flex;
+}
+
+/* 체크박스 대신 보여줄 라벨 스타일 */
+input.check-box + label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #bcbcbc;
+  cursor: pointer;
+}
+
+/* 체크박스가 체크됐을 때의 라벨 스타일 */
+input.check-box:checked + label {
   background-color: #613232;
 }
+
 /*체크박스 css인데 적용이 안됌. 이유를 도저히 모르겠음 */
 /*css는 나중에 하기로 결정*/

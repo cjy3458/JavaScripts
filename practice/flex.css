@@ -8,4 +8,64 @@
   flex-wrap: nowrap;
 }
 
+.button {
+  padding: 1em 1.5em;
+  font-size: 2em;
+  font-weight: 400;
+  font-family: "Helvetica", "Arial", sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
 
+.button-second {
+  background: linear-gradient(to right, #081923, #75757c);
+  box-shadow: 0 2px 25px rgba(98, 144, 170, 0.5);
+}
+
+.button-second:active {
+  background: linear-gradient(to right, #081923, #75757c);
+}
+
+.button:focus {
+  outline: none;
+}
+
+particle {
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  position: fixed;
+  opacity: 0;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 4px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+}
